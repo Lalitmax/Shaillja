@@ -36,11 +36,11 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm lg:hidden">
-            <div className="fixed inset-y-0 left-0 w-[240px] sm:w-[300px] bg-background p-6 shadow-lg">
+          <div className="fixed inset-0 z-50 bg-background/80 bg-gray-500 backdrop-blur-sm lg:hidden">
+            <div className="fixed w-full inset-y-0 left-0  sm:w-[300px] bg-background p-6 shadow-lg">
               <div className="flex items-center justify-between">
                 <Link to="/" className="font-bold text-xl" onClick={() => setIsOpen(false)}>
-                Shaillja
+                  Shaillja
                 </Link>
                 <button
                   className="rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground"
@@ -49,12 +49,12 @@ function Navbar() {
                   <X className="h-5 w-5" />
                 </button>
               </div>
-              <nav className="mt-8 flex flex-col gap-4">
+              <nav className="mt-5  shadow-gray-200 flex flex-col bg-[#020817] gap-4 p-3  rounded-md border">
                 {routes.map((route) => (
                   <Link
                     key={route.href}
                     to={route.href}
-                    className={`text-sm font-medium transition-colors hover:text-primary ${isActive(route.href) ? "text-primary" : "text-muted-foreground"
+                    className={`text-sm font-medium transition-colors  hover:text-primary ${isActive(route.href) ? "text-primary" : "text-muted-foreground"
                       }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -72,7 +72,7 @@ function Navbar() {
             <Link
               key={route.href}
               to={route.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${isActive(route.href) ? "text-primary" : "text-muted-foreground"
+              className={`text-sm font-medium  transition-colors hover:text-primary ${isActive(route.href) ? "text-primary" : "text-muted-foreground"
                 }`}
             >
               {route.label}
