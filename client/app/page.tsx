@@ -6,7 +6,7 @@ import { ArrowRight, CreditCard, DollarSign, QrCode, RefreshCw } from "lucide-re
 export default function Home() {
   return (
     <div className="space-y-8">
-      <section className="py-12 md:py-24">
+      <section className="md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -49,7 +49,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" size="sm" className="w-full" asChild>
-                  <Link href="/AePSTransactionPage">
+                  <Link href="/AadhaarPaymentPage">
                     Aeps <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>

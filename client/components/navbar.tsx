@@ -17,7 +17,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/withdraw", label: "Withdraw" },
-    { href: "/AePSTransactionPage", label: "Aeps" },
+    { href: "/AadhaarPaymentPage", label: "Aeps" },
     { href: "/deposit", label: "Deposit" },
     { href: "/transfer", label: "Transfer" },
     { href: "/qr-code", label: "QR Code" },
@@ -37,11 +37,9 @@ export default function Navbar() {
             <SheetContent side="left" className="w-[240px] sm:w-[300px]">
               <div className="flex items-center justify-between">
                 <Link href="/" className="font-bold text-xl" onClick={() => setIsOpen(false)}>
-                Shaillja
+                  Shaillja
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                  <X className="h-5 w-5" />
-                </Button>
+
               </div>
               <nav className="mt-8 flex flex-col gap-4">
                 {routes.map((route) => (
@@ -61,7 +59,7 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
           <Link href="/" className="font-bold text-xl hidden md:inline-block">
-          Shaillja
+            Shaillja
           </Link>
         </div>
         <nav className="hidden lg:flex items-center gap-6">
