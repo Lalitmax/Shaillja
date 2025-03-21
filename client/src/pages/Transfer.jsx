@@ -42,8 +42,8 @@ function Transfer() {
   }
 
   return (
-    <div className="max-w-md mx-auto">
-      <Card className="border-primary/20">
+     <div className="max-w-md mx-auto">
+          <Card className="border-primary/20">
         <CardHeader>
           <CardTitle className="text-2xl">Transfer Funds</CardTitle>
           <CardDescription>Send money between accounts or to other people</CardDescription>
@@ -56,7 +56,7 @@ function Transfer() {
             </TabsList>
 
             <form onSubmit={handleTransfer}>
-              <div className="space-y-6">
+              <div className="space-y-3">
                 <div className="space-y-2">
                   <Label htmlFor="from-account">From Account</Label>
                   <Select id="from-account" value={fromAccount} onChange={setFromAccount}>
