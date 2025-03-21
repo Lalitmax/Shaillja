@@ -61,7 +61,7 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
           <Link href="/" className="font-bold text-xl hidden md:inline-block">
-            Banking App
+          Shaillja
           </Link>
         </div>
         <nav className="hidden lg:flex items-center gap-6">
